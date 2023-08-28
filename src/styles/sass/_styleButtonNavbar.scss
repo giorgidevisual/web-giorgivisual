@@ -1,0 +1,36 @@
+$color-dark:#000;
+$color-white:#fff; 
+$color-gray:#EBF1F1; 
+$color-orage:#FF5C00; 
+$color-yellow:#FFE800;
+$color-red: #F50002; 
+$color-green: #00E84F;
+$color-greenlight: #29FF70;
+$color-magenta: #FF3D9E;
+$color-cyan: #0AFFE3;
+
+
+.main-nav__button {
+  display: inline-flex;
+  background-color: $color-dark;
+  border: 2px solid $color-white;
+  border-radius: 30px;
+  box-shadow: $color-white 4px 4px 0 0;
+  color: $color-white;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem;
+  /* touch-action: manipulation; */
+  transition: all 0.3s ease;
+}
+
+
+.main-nav__button:hover {
+  color: $color-dark;
+  background: $color-green;
+  box-shadow: $color-white 0 0 0 0;
+  transition: all 0.3s ease;
+}
+.nav__button:active {
+  margin-top: 2px;
+}

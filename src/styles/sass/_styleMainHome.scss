@@ -1,0 +1,71 @@
+$color-dark:#000;
+$color-white:#fff; 
+$color-gray:#EBF1F1; 
+$color-orage:#FF5C00; 
+$color-yellow:#FFE800;
+$color-red: #F50002; 
+$color-greenLight: #00E83B;
+
+@font-face {
+  font-family: 'Plain';
+  src: local('Plain'), url(/src/styles/fonts/Plain-Medium.ttf) format('truetype');
+  src: local('Plain'), url(/src/styles/fonts/Plain-Regular.ttf) format('truetype');
+}
+
+$font-h1: 600 clamp(3rem, 3vw, 6rem) 'Plain', sans-serif;
+$font-h2: 600 clamp(2rem, 3vw, 4rem) 'Plain', sans-serif;
+$font-p: 500 clamp(1rem, 2vw, 2.5rem) 'Plain', sans-serif;
+
+.main-wrap {
+  display: flex;
+  background-color: $color-dark;
+  padding: 0 6rem;
+  height: 37.5rem; //cambiar con cuando coleque el gridç
+  z-index: -1;
+
+}
+
+.main-container {
+  display: flex;
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.main-container__title {
+  font: $font-h1;
+  color: $color-white;
+}
+
+.main-container__subtitle {
+  display: flex;
+  max-width: 16rem;
+  height: 4rem;
+  justify-content: center; 
+  align-items: center;
+  font: $font-h2;
+  color: $color-dark;
+  background-color: $color-white;
+  border: 2px $color-dark solid;
+  border-radius: 6.25rem;
+  padding-bottom: 0.3rem;
+
+}
+
+.main-container__description {
+  font: $font-p;
+  color: $color-white;
+}
+
+.main-background {
+  position: absolute;
+  right: 0 ;
+  background-image: url("https://monikersf.com/wp-content/uploads/2019/06/1.gif");
+  background-color: blue;
+  height: 50%;
+  width: 100%;
+ 
+}

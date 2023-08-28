@@ -1,0 +1,35 @@
+@use "styleButtonNavbar";
+
+$color-dark:#000;
+$color-white:#fff; 
+$color-gray:#EBF1F1; 
+$color-orage:#FF5C00; 
+$color-yellow:#FFE800;
+$color-red: #F50002; 
+$color-greenLight: #00E83B;
+
+.header-wrap {
+  display: flex;
+  height: 6.25rem;
+  justify-content: space-between;
+  background-color: $color-dark;
+  padding: 0 6rem;
+
+}
+
+.header__logo-container {
+  display: inline-flex;
+  padding: 1rem;
+
+}
+.header__embed-logo {
+  flex-grow: 1;
+  width: 0%;
+  object-fit: contain;
+}
+
+.navbar__main-nav {
+  display: inline-flex;
+  align-items: center; 
+  gap: 1.5rem;
+} 
