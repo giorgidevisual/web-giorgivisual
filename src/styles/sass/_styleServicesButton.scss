@@ -1,0 +1,39 @@
+$color-dark:#000;
+$color-white:#fff; 
+$color-gray:#EBF1F1; 
+$color-orage:#FF5C00; 
+$color-yellow:#FFE800;
+$color-red: #F50002; 
+$color-green: #00E84F;
+$color-greenlight: #29FF70;
+$color-magenta: #FF3D9E;
+$color-cyan: #0AFFE3;
+
+@font-face {
+  font-family: 'Plain';
+  src: local('Plain'), url(/src/styles/fonts/Plain-Medium.ttf) format('truetype');
+  src: local('Plain'), url(/src/styles/fonts/Plain-Regular.ttf) format('truetype');
+}
+
+$font-p: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif;
+
+.service-button {
+  display: flex;
+  border-style: none;
+  justify-content: center;
+  min-width: 10rem;
+  background-color: $color-yellow;
+  color: $color-dark;
+  border-radius: 6.25rem;
+  padding: 0.6rem;
+  font: $font-p;
+  
+}
+
+
+.service-button--one {
+  color: $color-white;
+  border-radius: 0;
+  background-color: transparent;
+  
+}
