@@ -17,13 +17,13 @@ const ServicesSection = () => {
       <div className="services-navWrap">
         <div className="services-nav-container">
           <div className="service-nav-container__row">
-            <ServicesButtonRowOne titleBtnOne="Branding" titleBtnTwo="Identidad de marca" titleBtnThree="Identidad verbal"/>
+            <ServicesButtonRowOne buttonOne="Branding" buttonTwo="Identidad de marca" buttonThree="Identidad verbal"/>
           </div>
           <div className="service-nav-container__row">
             <ServicesButtonRowTwo titleBtnOne="Edición de video" titleBtnTwo="Creación de contenido" titleBtnThree="Fotografía"/>
           </div>
           <div className="service-nav-container__row">
-            <ServicesButtonRowThree titleBtnOne="Interfaz y experiencia de usuario UI/UX" titleBtnTwo="Desarrollo web"/>
+            <ServicesButtonRowThree buttonOne="Interfaz y experiencia de usuario UI/UX" buttonTwo="Desarrollo web"/>
           </div>
         </div>
         <figure className="service-nav-container__graph-container">

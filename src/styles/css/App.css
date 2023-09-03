@@ -1,0 +1,36 @@
+.layout {
+  display: grid;
+  grid: 
+    "navbar" 6.25rem
+    "mainHome" 2fr
+    "serviceSection" 1fr
+    "highlightsSection" 1fr
+    "formSection" 0.8fr
+    "footer" 1fr
+    / 100%
+  ;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.mainHome {
+  grid-area: mainHome;
+}
+
+.serviceSection {
+  grid-area: serviceSection;
+}
+
+.highlightsSection {
+  grid-area: highlightsSection;
+}
+
+.formSection {
+  grid-area: formSection;
+}
+
+.footer {
+  grid-area: footer;
+} 

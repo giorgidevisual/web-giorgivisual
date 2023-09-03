@@ -1,0 +1,73 @@
+$color-dark:#000;
+$color-white:#fff; 
+
+@font-face {
+  font-family: 'Plain';
+  src: local('Plain'), url(/src/styles/fonts/Plain-Medium.ttf) format('truetype');
+  src: local('Plain'), url(/src/styles/fonts/Plain-Regular.ttf) format('truetype');
+}
+
+$font-h2: 600 clamp(2rem, 3vw, 4rem) 'Plain', sans-serif;
+$font-p: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif;
+
+.highlights-wrap {
+  display: flex;
+  background-color: $color-dark;
+  padding: 0 6rem;
+}
+
+.highlights-colum-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1 2 auto;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.highlights-colum-one__title {
+  font: $font-h2;
+  color: $color-white;
+}
+
+.highlights__graph {
+  display: flex;
+  width: 40%;
+}
+
+.highlights__graph-embed {
+  flex-grow: 1;
+  width: 0;
+  object-fit: contain ;
+}
+
+.highlights-colum-two {
+  display: flex;
+  flex: 3 0 auto;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.highlights-colum-two-figure-wrap {
+  display: grid;
+  grid-template-columns: minmax(16rem, 21rem);
+  grid-template-rows: 11rem 11rem;
+  grid-template-areas:
+      "picture-one"
+      "picture-two";
+  border: 2px red solid;
+  gap: 1rem;
+}
+
+.highlights-colum-two__project {
+  grid-area: picture-one ;
+  border-radius: 3.75rem 0rem;
+  background: #D9D9D9;
+}
+
+.highlights-colum-two__project--two {
+  @extend .highlights-colum-two__project;
+  grid-area: picture-two;
+}

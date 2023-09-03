@@ -29,12 +29,12 @@ const StyleServicesButton = styled.button`
     color: #fff;
   `
 
- const ServicesButtonRowOne = ({titleBtnOne, titleBtnTwo, titleBtnThree}) => {
+ const ServicesButtonRowOne = (title) => {
    return (
     <>
-      <StyleServicesButton>{titleBtnOne}</StyleServicesButton>
-      <ServicesButtonTwo>{titleBtnTwo}</ServicesButtonTwo>
-      <ServicesButtonThree>{titleBtnThree}</ServicesButtonThree>
+      <StyleServicesButton>{title.buttonOne}</StyleServicesButton>
+      <ServicesButtonTwo>{title.buttonTwo}</ServicesButtonTwo>
+      <ServicesButtonThree>{title.buttonThree}</ServicesButtonThree>
 
     </>
     

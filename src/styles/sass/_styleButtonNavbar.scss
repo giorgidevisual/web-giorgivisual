@@ -9,6 +9,7 @@ $color-greenlight: #29FF70;
 $color-magenta: #FF3D9E;
 $color-cyan: #0AFFE3;
 
+$font-p: 600 clamp(0.5rem, 0.8rem, 1.3rem) 'Plain', sans-serif;
 
 .main-nav__button {
   display: inline-flex;
@@ -18,19 +19,22 @@ $color-cyan: #0AFFE3;
   box-shadow: $color-white 4px 4px 0 0;
   color: $color-white;
   cursor: pointer;
-  font-weight: 600;
-  padding: 0.5rem;
+  font: $font-p;
+  padding: 0.4rem 0.8rem;
   /* touch-action: manipulation; */
   transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-dark;
+    background: $color-green;
+    box-shadow: $color-white 0 0 0 0;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    margin-top: 2px;
+  } 
 }
 
 
-.main-nav__button:hover {
-  color: $color-dark;
-  background: $color-green;
-  box-shadow: $color-white 0 0 0 0;
-  transition: all 0.3s ease;
-}
-.nav__button:active {
-  margin-top: 2px;
-}
+

@@ -1,4 +1,3 @@
-@use "styleServicesButton"; 
 
 $color-dark:#000;
 $color-white:#fff; 
@@ -23,6 +22,8 @@ $font-p: 500 clamp(1rem, 2vw, 2.5rem) 'Plain', sans-serif;
   flex-direction: column;
   padding: 0 6rem;
   background-color: $color-dark;
+  justify-content: center;
+  gap: 2rem
 }
 
 .services-header {
