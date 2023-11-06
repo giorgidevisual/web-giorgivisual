@@ -1,45 +1,67 @@
 import styled from 'styled-components'
 
-const StyleServicesButtonRowThree = styled.button` 
+const StyleServicesButtons = styled.button` 
       display: flex;
-      border: ${(props) => props.border};
-      justify-content: center;
+      flex: 1 1 auto;
       min-width: 10rem;
-      border-radius: ${(props) => props.borderRadius };//6.25rem;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      font: 500 clamp(1rem, 0.929rem + 0.36vw, 1.5rem) 'Plain', sans-serif;
+      border: ${(props) => props.border};
       background: ${(props) => props.background};
-      color: #000;
-      padding: 0.5rem 1.5rem;
-      font: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif; 
+      background-color:${(props) => props.backgroundColor};
+      color: ${(props) => props.color};
+      border-radius: ${(props) => props.borderRadius};
 
       &:hover {
         background-color: ${(props) => props.color};
       }
   `;
 
- const ServicesButtonRowThree = (title) => {
-   return (
-    <>
-      <StyleServicesButtonRowThree
+const StyleGraphButton = styled.figure`
+.graph-circle {
+  display: flex;
+  width: 3.8rem;
+}
+
+.graph-circle__row {
+  flex-grow: 1;
+  width: 0;
+  object-fit: contain;
+}
+
+`
+
+const ServicesButtonRowThree = (title) => {
+  return (
+   <> 
+      <StyleServicesButtons
         border="none"
-        background="linear-gradient(90deg, #F00 0%, #FF5C00 21.88%, #FFE800 100%)"
         borderRadius="6.25rem"
+        background="linear-gradient(90deg, #F00 0%, #FF5C00 21.88%, #FFE800 100%)"
+        color="#000"
       >
-        {title.buttonOne}
-      </StyleServicesButtonRowThree>
-{
-      <StyleServicesButtonRowThree
-        background="#EBF1F1"
+        {title.buttonSeven}
+      </StyleServicesButtons>
+      <StyleGraphButton>
+        <figure className="graph-circle">
+          <img src="src/assets/arrow-rowThree.svg" alt="" className="graph-circle__row" />
+        </figure>
+      </StyleGraphButton>  
+
+      <StyleServicesButtons
         border="none"
+        borderRadius="0"
+        backgroundColor="#EBF1F1"
+        color="#000"
       >
-        {title.buttonTwo}
-      </StyleServicesButtonRowThree>}
+        {title.buttonEight}
+      </StyleServicesButtons>
 
-    </>
-    
-   )
- };
- 
- export default ServicesButtonRowThree;
+   </>
+   
+  )
+};
 
-
-
+export default ServicesButtonRowThree;

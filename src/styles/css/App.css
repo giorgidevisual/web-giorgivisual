@@ -2,11 +2,11 @@
   display: grid;
   grid: 
     "navbar" 6.25rem
-    "mainHome" 2fr
-    "serviceSection" 1fr
-    "highlightsSection" 1fr
-    "formSection" 0.8fr
-    "footer" 1fr
+    "mainHome" auto
+    "serviceSection" auto
+    "highlightsSection" auto
+    "formSection" auto
+    "footer" auto
     / 100%
   ;
 }

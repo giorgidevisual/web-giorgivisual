@@ -8,10 +8,10 @@ const MainBackground = () => {
     <picture className="main-background__circle-container">
       <img src={circle} type="image/svg" alt="" className="main-background__image-embed" />
     </picture>
-    <picture className="main-background__circle-container">
+    <picture className="main-background__halfcircle-container">
       <img src={halfCircle} type="image/svg" alt="" className="main-background__image-embed" />
     </picture>
-    <picture className="main-background__circle-container">
+    <picture className="main-background__halfcircle-container">
       <img src={halfCircle} type="image/svg" alt="" className="main-background__image-embed" />
     </picture>
     </>

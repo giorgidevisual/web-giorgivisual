@@ -1,7 +1,7 @@
 import React from 'react'
 import ServicesButtonRowOne from './styles/ServicesButtonsRowOne.styled'
-import ServicesButtonRowTwo from './styles/ServicesButtonsRowTwo.styled';
-import ServicesButtonRowThree from './styles/ServicesButtonsRowThree.styled';
+import ServicesButtonRowTwo from './styles/ServicesButtonsRowTwo.styled'
+import ServicesButtonRowThree from './styles/ServicesButtonsRowThree.styled'
 
 const ServicesSection = () => {
   return (
@@ -20,10 +20,10 @@ const ServicesSection = () => {
             <ServicesButtonRowOne buttonOne="Branding" buttonTwo="Identidad de marca" buttonThree="Identidad verbal"/>
           </div>
           <div className="service-nav-container__row">
-            <ServicesButtonRowTwo titleBtnOne="Edición de video" titleBtnTwo="Creación de contenido" titleBtnThree="Fotografía"/>
+            <ServicesButtonRowTwo buttonFour="Edición de video" buttonFive="Creación de contenido" buttonSix="Fotografía"/>
           </div>
           <div className="service-nav-container__row">
-            <ServicesButtonRowThree buttonOne="Interfaz y experiencia de usuario UI/UX" buttonTwo="Desarrollo web"/>
+            <ServicesButtonRowThree buttonSeven="Interfaz y experiencia de usuario UI/UX" buttonEight="Desarrollo web"/>
           </div>
         </div>
         <figure className="service-nav-container__graph-container">

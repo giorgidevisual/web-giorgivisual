@@ -12,17 +12,19 @@ const HighlightsSection = () => {
       <div className="highlights-colum-two">
         <figure className="highlights-colum-two-figure-wrap">
           <picture className="highlights-colum-two__project">
+          <span className="degrade"></span>
             <img src="" alt="" className="highlights-colum-two__image-embed" />
           </picture>
-          <picture className="highlights-colum-two__project--two">
-            <img src="" alt="" className="highlights-colum-two__image-embed" />
-          </picture>
-        </figure>
-        <figure className="highlights-colum-two-figure-wrap">
           <picture className="highlights-colum-two__project">
+            <span className="degrade"></span>
             <img src="" alt="" className="highlights-colum-two__image-embed" />
           </picture>
-          <picture className="highlights-colum-two__project--two">
+          <picture className="highlights-colum-two__project">
+            <span className="degrade"></span>
+            <img src="" alt="" className="highlights-colum-two__image-embed" />
+          </picture>
+          <picture className="highlights-colum-two__project">
+            <span className="degrade"></span>
             <img src="" alt="" className="highlights-colum-two__image-embed" />
           </picture>
         </figure>          

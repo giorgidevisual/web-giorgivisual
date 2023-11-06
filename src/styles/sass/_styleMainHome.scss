@@ -20,7 +20,7 @@ $font-p: 500 clamp(1rem, 0.929rem + 0.36vw, 1.5rem) 'Plain', sans-serif;
   position: relative;
   display: flex;
   background-color: $color-dark;
-  padding: 2rem 6rem;
+  padding: 3rem 6rem;
 
 }
 
@@ -73,18 +73,24 @@ $font-p: 500 clamp(1rem, 0.929rem + 0.36vw, 1.5rem) 'Plain', sans-serif;
 
 .main-background__circle-container{
   display: flex;
-  height: 16rem;
+  width: 16rem;
+}
+
+.main-background__halfcircle-container {
+  display: flex;
+  width: 8rem;
 }
 
 .main-background__image-embed {
   flex-grow: 1;
+  width: 0;
   object-fit: contain;
 }
 
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
   .main-wrap{
-    padding: 0 3rem;
+    padding: 1.5rem 3rem;
   }
 
   .main-container {
@@ -95,7 +101,7 @@ $font-p: 500 clamp(1rem, 0.929rem + 0.36vw, 1.5rem) 'Plain', sans-serif;
 
 @media screen and (max-width: 767px){
   .main-wrap{
-    padding: 0 1.8rem;
+    padding: 0.6rem 1.8rem;
   }
   .main-container {
     max-width: 100vw;

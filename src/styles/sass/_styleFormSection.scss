@@ -10,12 +10,13 @@ $color-greenlight: #29FF70;
   src: local('Plain'), url(/src/styles/fonts/Plain-Regular.ttf) format('truetype');
 }
 
-$font-h2: 600 clamp(2rem, 3vw, 4rem) 'Plain', sans-serif;
-$font-p: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif;
+$font-h1: 600 clamp(2.5rem, 2.054rem + 2.23vw, 5.625rem) 'Plain', sans-serif;
+$font-h2: 600 clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem) 'Plain', sans-serif;
+$font-p: 500 clamp(1rem, 0.929rem + 0.36vw, 1.5rem) 'Plain', sans-serif;
 
 .form-wrap {
   display: flex;
-  padding: 0 6rem;
+  padding: 3rem 6rem;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -24,7 +25,6 @@ $font-p: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif;
 
 .form-content {
   display: flex; 
-  height: 10rem;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -38,7 +38,7 @@ $font-p: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif;
 }
 
 .form-content__description  {
-  width: 38rem;
+  width: clamp(42rem, 38.571rem + 7.14vw, 50rem);
   color: $color-dark;
   text-align: center;
   font: $font-p;
@@ -55,3 +55,21 @@ $font-p: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif;
   padding: 0.5rem 1.5rem;
   font: 500 clamp(1rem, 1.5vw, 2.5rem) 'Plain', sans-serif; 
 }
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .form-wrap{
+     padding: 1.5rem 3rem;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 767px){
+  .form-wrap{
+     padding: 0.8rem 1.8rem;
+   }
+
+  .form-content__description  {
+    width: 90vw;
+  } 
+ 
+ }
