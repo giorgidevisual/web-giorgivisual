@@ -1,0 +1,103 @@
+$color-dark:#000;
+$color-white:#fff; 
+$color-gray:#EBF1F1; 
+$color-orage:#FF5C00; 
+$color-yellow:#FFE800;
+$color-red: #F50002; 
+$color-greenLight: #00E83B;
+
+@font-face {
+  font-family: 'Plain';
+  src: local('Plain'), url(/src/styles/fonts/Plain-Medium.ttf) format('truetype');
+  src: local('Plain'), url(/src/styles/fonts/Plain-Regular.ttf) format('truetype');
+}
+
+$font-h1: 600 clamp(2.5rem, 2.054rem + 2.23vw, 5.625rem) 'Plain', sans-serif;
+$font-h2: 600 clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem) 'Plain', sans-serif;
+$font-p: 500 clamp(1rem, 0.929rem + 0.36vw, 1.5rem) 'Plain', sans-serif;
+
+.main-wrap {
+  position: relative;
+  display: flex;
+  background-color: $color-dark;
+  padding: 2rem 6rem;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  max-width: 45vw;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.main-container__title {
+  font: $font-h1;
+  line-height: clamp(2.5rem, 2.054rem + 2.23vw, 5.625rem);
+  color: $color-white;
+}
+
+.main-container__subtitle {
+  display: flex;
+  max-width: 18rem;
+  height: 3rem;
+  justify-content: center; 
+  align-items: center;
+  font: $font-h2;
+  color: $color-dark;
+  background-color: $color-white;
+  border-radius: 6.25rem;
+  padding-bottom: 0.3rem;
+
+}
+
+.main-container__description {
+  font: $font-p;
+  color: $color-white;
+}
+
+.main-background {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  z-index: 1;
+  width: 85vw;
+  //background-color:$color-greenLight ;
+
+}
+
+.main-background__circle-container{
+  display: flex;
+  height: 16rem;
+}
+
+.main-background__image-embed {
+  flex-grow: 1;
+  object-fit: contain;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .main-wrap{
+    padding: 0 3rem;
+  }
+
+  .main-container {
+    max-width: 50vw;
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  .main-wrap{
+    padding: 0 1.8rem;
+  }
+  .main-container {
+    max-width: 100vw;
+  }
+}
