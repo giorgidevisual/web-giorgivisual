@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+
+  "scripts": {
+    "dev": "ts-node-dev --respawn ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"    
+  },
+  "author": "Giorgi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.18.2",
+    "mysql2": "3.6.3",
+    "ts-node": "10.9.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.16",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
